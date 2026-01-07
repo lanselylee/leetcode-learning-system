@@ -1,53 +1,111 @@
-# 🧠 LeetCode Notes by Xiaomeng Li
+# 🧠 LeetCode Learning System — Xiaomeng Li
 
-Welcome to my personal LeetCode notebook!  
-This repo records my journey of learning algorithms through coding.
+![LeetCode Stats](https://leetcode-stats-card.vercel.app/api?username=xiaomeng)
 
----
+This repository is not just a collection of accepted solutions.
 
-# 🧠 LeetCode Notes by Xiaomeng Li
+It is a **learning system** that tracks how I:
+- think about problems
+- fail
+- recognize patterns
+- and improve over time
 
-![Solved](https://img.shields.io/badge/Solved-98%2F159-blue)
-![Language](https://img.shields.io/badge/Language-Python-orange)
-![Focus](https://img.shields.io/badge/Focus-Backtracking%20%7C%20DP%20%7C%20Greedy-green)
-![Update](https://img.shields.io/badge/Last%20Update-2025%20Oct-brightgreen)
-
----
-
-## 📍 Current Focus
-- Backtracking 模板精炼中 🔄  
-- 动态规划（DP）专题准备开始  
-- 正在整理 LeetCode “进击的小狗” 题单进度  
+My goal is to become a **strong problem-solving engineer**, not just someone who passes test cases.
 
 ---
 
-## 🧩 Folder Structure
+## 🚀 What this repository contains
 
-leetcode-notes-xiaomeng/
-├── backtracking/ # 回溯题目
-├── dp/ # 动态规划
-├── greedy/ # 贪心算法
-├── templates/ # 模板代码
-└── problems.md # 所有题目列表
+This repo has three layers:
+
+### 1️⃣ LeetCode Solutions (auto-synced)
+All accepted LeetCode submissions are automatically synced from LeetCode to GitHub.
+
+leetcode/
+├── easy/
+├── medium/
+└── hard/
+
+yaml
+Copy code
+
+These files are generated automatically after each successful submission.
+
+---
+
+### 2️⃣ Failure Logs (manual, high-value)
+
+This is the most important part of this repo.
+
+Here I record:
+- what I tried
+- why it failed
+- what mental model was wrong
+- what pattern I learned
+
+failure_logs/
+├── dp/
+├── greedy/
+├── intervals/
+└── backtracking/
+
+csharp
+Copy code
+
+Each file is a short “debug log” of how I fixed my thinking.
+
+Example:
+failure_logs/dp/lc1335_job_schedule.md
 
 yaml
 Copy code
 
 ---
 
-## 📊 My Current Stats
+### 3️⃣ Problem Tracker
 
-| Category | Easy | Medium | Hard | Total |
-|-----------|------|---------|------|--------|
-| ✅ Backtracking | 0 | 10 | 0 | 10 |
-| ✅ DP | 6 | 18 | 2 | 26 |
-| ✅ Greedy | 4 | 5 | 2 | 11 |
-| ✅ Tree / BST | 10 | 12 | 1 | 23 |
-| ✅ String | 8 | 4 | 1 | 13 |
+I track my real progress (including failures) here:
 
-> 📘 题单来源：[进击的小狗](https://leetcode.com/problem-list/2u418x6r/)  
-> 📦 仓库地址：[leetcode-notes-xiaomeng](https://github.com/lanseylee/leetcode-notes-xiaomeng)
+problems.md
+
+yaml
+Copy code
+
+Problems are marked as:
+- ✅ solved cleanly
+- ❌ solved after mistakes or re-learning
+
+This keeps my progress honest and focused on growth.
 
 ---
 
-⭐ Keep learning, keep coding, keep improving.
+## 🧩 How I use this system
+
+For every LeetCode problem:
+
+1. Solve it on LeetCode  
+2. Code is auto-synced to GitHub  
+3. If I struggled, I write a failure log  
+4. I update `problems.md` with the real status  
+
+This way I convert mistakes into reusable knowledge.
+
+---
+
+## 🎯 Current focus
+
+I am currently focusing on:
+- Backtracking patterns
+- Dynamic Programming (state design and partition DP)
+- Greedy vs DP boundary cases
+
+The goal is not speed, but **correct mental models**.
+
+---
+
+## 🧠 Why this repo exists
+
+Most people store answers.  
+I store **how I think**.
+
+This repo shows how my problem-solving ability evolves over time.
