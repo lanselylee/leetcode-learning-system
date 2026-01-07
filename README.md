@@ -2,10 +2,10 @@
 
 ## 📊 LeetCode Stats
 
-- Easy: {{EASY}}
-- Medium: {{MED}}
-- Hard: {{HARD}}
-- Total Solved: {{TOTAL}}
+- Easy: 91
+- Medium: 224
+- Hard: 42
+- Total Solved: 357
 
 
 This repository is not just a collection of accepted solutions.
