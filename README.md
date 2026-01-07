@@ -2,10 +2,10 @@
 
 ## 📊 LeetCode Stats
 <!-- LEETCODE_STATS_START -->
-- Easy: 0
-- Medium: 0
-- Hard: 0
-- Total Solved: 0
+- Easy: 91
+- Medium: 224
+- Hard: 42
+- Total Solved: 357
 <!-- LEETCODE_STATS_END -->
 
 This repository is not just a collection of accepted solutions.
