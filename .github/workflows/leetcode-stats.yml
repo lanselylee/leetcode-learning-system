@@ -1,0 +1,45 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Fetch LeetCode Stats
+        run: |
+          curl -s https://leetcode.com/graphql \
+          -H "Content-Type: application/json" \
+          --data '{"query":"{ matchedUser(username: \"xiaomeng\") { submitStats { acSubmissionNum { difficulty count } } } }"}' \
+          > stats.json
+
+      - name: Update README placeholders
+        run: |
+          EASY=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="Easy") | .count' stats.json)
+          MED=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="Medium") | .count' stats.json)
+          HARD=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="Hard") | .count' stats.json)
+          TOTAL=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="All") | .count' stats.json)
+
+          sed -i "s/{{EASY}}/$EASY/g" README.md
+          sed -i "s/{{MED}}/$MED/g" README.md
+          sed -i "s/{{HARD}}/$HARD/g" README.md
+          sed -i "s/{{TOTAL}}/$TOTAL/g" README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "leetcode-bot"
+          git config user.email "leetcode-bot@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update LeetCode stats"
+          git push
