@@ -1,6 +1,12 @@
 # 🧠 LeetCode Learning System — Xiaomeng Li
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/xiaomeng)
+## 📊 LeetCode Stats
+
+- Easy: {{EASY}}
+- Medium: {{MED}}
+- Hard: {{HARD}}
+- Total Solved: {{TOTAL}}
+
 
 This repository is not just a collection of accepted solutions.
 
