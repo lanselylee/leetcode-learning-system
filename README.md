@@ -1,12 +1,12 @@
 # 🧠 LeetCode Learning System — Xiaomeng Li
 
 ## 📊 LeetCode Stats
-
-- Easy: 91
-- Medium: 224
-- Hard: 42
-- Total Solved: 357
-
+<!-- LEETCODE_STATS_START -->
+- Easy: 0
+- Medium: 0
+- Hard: 0
+- Total Solved: 0
+<!-- LEETCODE_STATS_END -->
 
 This repository is not just a collection of accepted solutions.
 
@@ -35,12 +35,9 @@ leetcode/
 yaml
 Copy code
 
-These files are generated automatically after each successful submission.
-
 ---
 
 ### 2️⃣ Failure Logs (manual, high-value)
-
 This is the most important part of this repo.
 
 Here I record:
@@ -55,10 +52,8 @@ failure_logs/
 ├── intervals/
 └── backtracking/
 
-csharp
+makefile
 Copy code
-
-Each file is a short “debug log” of how I fixed my thinking.
 
 Example:
 failure_logs/dp/lc1335_job_schedule.md
@@ -69,7 +64,6 @@ Copy code
 ---
 
 ### 3️⃣ Problem Tracker
-
 I track my real progress (including failures) here:
 
 problems.md
@@ -81,13 +75,9 @@ Problems are marked as:
 - ✅ solved cleanly
 - ❌ solved after mistakes or re-learning
 
-This keeps my progress honest and focused on growth.
-
 ---
 
 ## 🧩 How I use this system
-
-For every LeetCode problem:
 
 1. Solve it on LeetCode  
 2. Code is auto-synced to GitHub  
@@ -99,18 +89,15 @@ This way I convert mistakes into reusable knowledge.
 ---
 
 ## 🎯 Current focus
-
-I am currently focusing on:
-- Backtracking patterns
-- Dynamic Programming (state design and partition DP)
-- Greedy vs DP boundary cases
+- Backtracking patterns  
+- Dynamic Programming (state design and partition DP)  
+- Greedy vs DP boundary cases  
 
 The goal is not speed, but **correct mental models**.
 
 ---
 
 ## 🧠 Why this repo exists
-
 Most people store answers.  
 I store **how I think**.
 
