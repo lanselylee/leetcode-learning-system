@@ -2,7 +2,7 @@ name: Update LeetCode Stats
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *" # every 6 hours
   workflow_dispatch:
 
 permissions:
@@ -17,24 +17,22 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Fetch LeetCode Stats
+      - name: Fetch LeetCode Stats (official profile numbers)
         run: |
           curl -s https://leetcode.com/graphql \
           -H "Content-Type: application/json" \
-          --data '{"query":"{ matchedUser(username: \"xiaomeng\") { submitStats { acSubmissionNum { difficulty count } } } }"}' \
+          --data '{"query":"{ matchedUser(username: \"xiaomeng\") { submitStatsGlobal { acSubmissionNum { difficulty count } } } }"}' \
           > stats.json
 
-      - name: Update README placeholders
+      - name: Update README stats block
         run: |
-          EASY=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="Easy") | .count' stats.json)
-          MED=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="Medium") | .count' stats.json)
-          HARD=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="Hard") | .count' stats.json)
-          TOTAL=$(jq -r '.data.matchedUser.submitStats.acSubmissionNum[] | select(.difficulty=="All") | .count' stats.json)
+          EASY=$(jq -r '.data.matchedUser.submitStatsGlobal.acSubmissionNum[] | select(.difficulty=="Easy") | .count' stats.json)
+          MED=$(jq -r '.data.matchedUser.submitStatsGlobal.acSubmissionNum[] | select(.difficulty=="Medium") | .count' stats.json)
+          HARD=$(jq -r '.data.matchedUser.submitStatsGlobal.acSubmissionNum[] | select(.difficulty=="Hard") | .count' stats.json)
+          TOTAL=$(jq -r '.data.matchedUser.submitStatsGlobal.acSubmissionNum[] | select(.difficulty=="All") | .count' stats.json)
 
-          sed -i "s/{{EASY}}/$EASY/g" README.md
-          sed -i "s/{{MED}}/$MED/g" README.md
-          sed -i "s/{{HARD}}/$HARD/g" README.md
-          sed -i "s/{{TOTAL}}/$TOTAL/g" README.md
+          # Replace the whole block between markers (safe even after many runs)
+          perl -0777 -i -pe "s/<!-- LEETCODE_STATS_START -->.*?<!-- LEETCODE_STATS_END -->/<!-- LEETCODE_STATS_START -->\n- Easy: $EASY\n- Medium: $MED\n- Hard: $HARD\n- Total Solved: $TOTAL\n<!-- LEETCODE_STATS_END -->/s" README.md
 
       - name: Commit and push if changed
         run: |
