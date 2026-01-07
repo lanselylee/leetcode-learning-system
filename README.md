@@ -1,6 +1,6 @@
 # 🧠 LeetCode Learning System — Xiaomeng Li
 
-![LeetCode Stats](https://leetcode-stats-card.vercel.app/api?username=xiaomeng)
+![LeetCode Stats](https://leetcard.jacoblin.cool/xiaomeng)
 
 This repository is not just a collection of accepted solutions.
 
