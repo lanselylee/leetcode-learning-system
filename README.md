@@ -1,12 +1,7 @@
 # 🧠 LeetCode Learning System — Xiaomeng Li
 
 ## 📊 LeetCode Stats
-<!-- LEETCODE_STATS_START -->
-- Easy: 91
-- Medium: 224
-- Hard: 42
-- Total Solved: 357
-<!-- LEETCODE_STATS_END -->
+![LeetCode Stats](https://leetcard.jacoblin.cool/xiaomeng)
 
 This repository is not just a collection of accepted solutions.
 
