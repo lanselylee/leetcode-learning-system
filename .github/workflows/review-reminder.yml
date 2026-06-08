@@ -1,0 +1,67 @@
+name: LeetCode Review Reminder
+
+on:
+  schedule:
+    - cron: "0 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  review-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check due reviews
+        run: python3 scripts/review.py github-output --output "$GITHUB_OUTPUT"
+        id: due
+
+      - name: Create reminder issue
+        if: steps.due.outputs.has_due == 'true'
+        uses: actions/github-script@v7
+        env:
+          ISSUE_TITLE: ${{ steps.due.outputs.issue_title }}
+          ISSUE_BODY: ${{ steps.due.outputs.issue_body }}
+        with:
+          script: |
+            const title = `${process.env.ISSUE_TITLE} - ${new Date().toISOString().slice(0, 10)}`;
+            const body = process.env.ISSUE_BODY;
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: "leetcode-review"
+              });
+            } catch (error) {
+              if (error.status === 404) {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: "leetcode-review",
+                  color: "0969da",
+                  description: "Spaced repetition reminders for LeetCode notes"
+                });
+              } else {
+                throw error;
+              }
+            }
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "leetcode-review"
+            });
+            const alreadyOpen = existing.data.find(issue => issue.title === title);
+            if (!alreadyOpen) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ["leetcode-review"]
+              });
+            }

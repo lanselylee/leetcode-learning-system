@@ -1,99 +1,124 @@
-# 🧠 LeetCode Learning System — Xiaomeng Li
+# LeetCode Learning & Review System
 
-## 📊 LeetCode Stats
 ![LeetCode Stats](https://leetcard.jacoblin.cool/xiaomeng)
 
 This repository is not just a collection of accepted solutions.
 
-It is a **learning system** that tracks how I:
-- think about problems
-- fail
-- recognize patterns
-- and improve over time
+It is my algorithm learning system for Python problem solving, pattern-based practice, failure analysis, and spaced repetition review.
 
-My goal is to become a **strong problem-solving engineer**, not just someone who passes test cases.
+My goal is to become a stronger problem-solving engineer by tracking how I think, where I get stuck, and when I should revisit a problem.
 
----
+## What This Repository Contains
 
-## 🚀 What this repository contains
+### 1. LeetCode Solutions
 
-This repo has three layers:
+Accepted submissions and manually polished notes are organized by problem or topic.
 
-### 1️⃣ LeetCode Solutions (auto-synced)
-All accepted LeetCode submissions are automatically synced from LeetCode to GitHub.
-
+```text
 leetcode/
 ├── easy/
 ├── medium/
 └── hard/
+```
 
-yaml
-Copy code
+### 2. Failure Logs
 
----
+This is the most valuable part of the system.
 
-### 2️⃣ Failure Logs (manual, high-value)
-This is the most important part of this repo.
+When I struggle with a problem, I record:
 
-Here I record:
-- what I tried
+- what I tried first
 - why it failed
-- what mental model was wrong
+- which mental model was wrong
 - what pattern I learned
 
+```text
 failure_logs/
 ├── dp/
 ├── greedy/
 ├── intervals/
 └── backtracking/
+```
 
-makefile
-Copy code
+### 3. Spaced Repetition Review
 
-Example:
-failure_logs/dp/lc1335_job_schedule.md
+Each important problem can be added to a memory-curve schedule. The review queue tells me what to revisit next.
 
-yaml
-Copy code
+```bash
+python3 scripts/review.py due
+```
 
----
+GitHub Actions checks the queue every morning and can create a reminder issue when problems are due.
 
-### 3️⃣ Problem Tracker
-I track my real progress (including failures) here:
+## Review Workflow
 
-problems.md
+Add a newly solved problem:
 
-yaml
-Copy code
+```bash
+python3 scripts/review.py add 39 "Combination Sum" --difficulty Medium --topic Backtracking --path backtracking/39_combination_sum.py
+```
 
-Problems are marked as:
-- ✅ solved cleanly
-- ❌ solved after mistakes or re-learning
+See what is due today:
 
----
+```bash
+python3 scripts/review.py due
+```
 
-## 🧩 How I use this system
+Mark a review result:
 
-1. Solve it on LeetCode  
-2. Code is auto-synced to GitHub  
-3. If I struggled, I write a failure log  
-4. I update `problems.md` with the real status  
+```bash
+python3 scripts/review.py review 39 --result good
+```
 
-This way I convert mistakes into reusable knowledge.
+Review results use a simple memory curve:
 
----
+| Result | Meaning | Next Review |
+| --- | --- | --- |
+| `again` | I forgot the idea or could not solve it | tomorrow |
+| `hard` | I solved it, but it was slow or shaky | in 3 days |
+| `good` | I solved it with minor friction | interval grows |
+| `easy` | I solved it confidently | interval grows faster |
 
-## 🎯 Current focus
-- Backtracking patterns  
-- Dynamic Programming (state design and partition DP)  
-- Greedy vs DP boundary cases  
+## Current Focus
 
-The goal is not speed, but **correct mental models**.
+- Backtracking patterns
+- Dynamic programming state design
+- Greedy vs. DP boundary cases
+- Binary search and two-pointer templates
+- Interview-ready Python implementations
 
----
+## Featured Notes
 
-## 🧠 Why this repo exists
-Most people store answers.  
-I store **how I think**.
+| Problem | Topic | File |
+| --- | --- | --- |
+| 1. Two Sum | Hash Map | [1_two_sum.py](1_two_sum.py) |
+| 39. Combination Sum | Backtracking | [backtracking/39_combination_sum.py](backtracking/39_combination_sum.py) |
+| 189. Rotate Array | Array / Two Pointers | [189_rotate_array.py](189_rotate_array.py) |
 
-This repo shows how my problem-solving ability evolves over time.
+## Repository Structure
+
+```text
+.
+├── .github/workflows/
+│   ├── leetcode-stats.yml
+│   └── review-reminder.yml
+├── data/
+│   └── review_schedule.json
+├── scripts/
+│   └── review.py
+├── templates/
+│   └── general_template.py
+├── problems.md
+└── topic folders and solution files
+```
+
+## Tech
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=black)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+
+## Links
+
+- LeetCode problem list: [进击的小狗](https://leetcode.com/problem-list/2u418x6r/)
+- GitHub profile: [@lanselylee](https://github.com/lanselylee)
