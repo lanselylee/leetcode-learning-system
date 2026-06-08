@@ -15,10 +15,13 @@ My goal is to become a stronger problem-solving engineer by tracking how I think
 Accepted submissions and manually polished notes are organized by problem or topic.
 
 ```text
-leetcode/
-├── easy/
-├── medium/
-└── hard/
+solutions/
+├── array/
+├── backtracking/
+├── binary-search/
+├── dp/
+├── greedy/
+└── hash-map/
 ```
 
 ### 2. Failure Logs
@@ -55,7 +58,7 @@ GitHub Actions checks the queue every morning and can create a reminder issue wh
 Add a newly solved problem:
 
 ```bash
-python3 scripts/review.py add 39 "Combination Sum" --difficulty Medium --topic Backtracking --path backtracking/39_combination_sum.py
+python3 scripts/new_problem.py 39 "Combination Sum" --difficulty Medium --topic Backtracking
 ```
 
 See what is due today:
@@ -91,9 +94,9 @@ Review results use a simple memory curve:
 
 | Problem | Topic | File |
 | --- | --- | --- |
-| 1. Two Sum | Hash Map | [1_two_sum.py](1_two_sum.py) |
-| 39. Combination Sum | Backtracking | [backtracking/39_combination_sum.py](backtracking/39_combination_sum.py) |
-| 189. Rotate Array | Array / Two Pointers | [189_rotate_array.py](189_rotate_array.py) |
+| 1. Two Sum | Hash Map | [solutions/hash-map/1_two_sum.py](solutions/hash-map/1_two_sum.py) |
+| 39. Combination Sum | Backtracking | [solutions/backtracking/39_combination_sum.py](solutions/backtracking/39_combination_sum.py) |
+| 189. Rotate Array | Array / Two Pointers | [solutions/array/189_rotate_array.py](solutions/array/189_rotate_array.py) |
 
 ## Repository Structure
 
@@ -104,8 +107,15 @@ Review results use a simple memory curve:
 │   └── review-reminder.yml
 ├── data/
 │   └── review_schedule.json
+├── failure_logs/
+│   └── backtracking/
 ├── scripts/
+│   ├── new_problem.py
 │   └── review.py
+├── solutions/
+│   ├── array/
+│   ├── backtracking/
+│   └── hash-map/
 ├── templates/
 │   └── general_template.py
 ├── problems.md

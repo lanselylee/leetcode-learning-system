@@ -7,7 +7,7 @@
       "title": "Combination Sum",
       "difficulty": "Medium",
       "topic": "Backtracking",
-      "path": "backtracking/39_combination_sum.py",
+      "path": "solutions/backtracking/39_combination_sum.py",
       "last_reviewed": "2026-06-08",
       "next_review": "2026-06-09",
       "review_count": 0,
