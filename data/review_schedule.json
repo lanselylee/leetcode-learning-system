@@ -1,6 +1,13 @@
 {
   "version": 1,
-  "intervals_days": [1, 3, 7, 14, 30, 60],
+  "intervals_days": [
+    1,
+    3,
+    7,
+    14,
+    30,
+    60
+  ],
   "problems": [
     {
       "id": 39,
@@ -8,6 +15,38 @@
       "difficulty": "Medium",
       "topic": "Backtracking",
       "path": "solutions/backtracking/39_combination_sum.py",
+      "last_reviewed": "2026-06-08",
+      "next_review": "2026-06-09",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-06-08",
+          "event": "added"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "topic": "DP",
+      "path": "solutions/dp/70_climbing_stairs.py",
+      "last_reviewed": "2026-06-08",
+      "next_review": "2026-06-09",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-06-08",
+          "event": "added"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Pow(x,n)",
+      "difficulty": "Medium",
+      "topic": "Math",
+      "path": "solutions/math/50_pow_x_n.py",
       "last_reviewed": "2026-06-08",
       "next_review": "2026-06-09",
       "review_count": 0,
