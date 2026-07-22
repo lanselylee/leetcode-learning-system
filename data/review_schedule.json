@@ -88,6 +88,22 @@
           "event": "added"
         }
       ]
+    },
+    {
+      "id": 120,
+      "title": "Triangle",
+      "difficulty": "Medium",
+      "topic": "dp",
+      "path": "solutions/dp/120_triangle.py",
+      "last_reviewed": "2026-07-21",
+      "next_review": "2026-07-22",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "event": "added"
+        }
+      ]
     }
   ]
 }
