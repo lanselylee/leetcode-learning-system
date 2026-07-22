@@ -56,6 +56,38 @@
           "event": "added"
         }
       ]
+    },
+    {
+      "id": 322,
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "topic": "dp",
+      "path": "solutions/dp/322_coin_change.py",
+      "last_reviewed": "2026-07-21",
+      "next_review": "2026-07-22",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "event": "added"
+        }
+      ]
+    },
+    {
+      "id": 300,
+      "title": "Longest Increasing Subsequence",
+      "difficulty": "Medium",
+      "topic": "dp",
+      "path": "solutions/dp/300_longest_increasing_subsequence.py",
+      "last_reviewed": "2026-07-21",
+      "next_review": "2026-07-22",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-07-21",
+          "event": "added"
+        }
+      ]
     }
   ]
 }
