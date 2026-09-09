@@ -172,6 +172,22 @@
           "event": "added"
         }
       ]
+    },
+    {
+      "id": 131,
+      "title": "Palindrome Partitioning",
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "path": "solutions/backtracking/131_palindrome_partitioning.py",
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-09",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-09-08",
+          "event": "added"
+        }
+      ]
     }
   ]
 }
