@@ -15,13 +15,19 @@
       "difficulty": "Medium",
       "topic": "Backtracking",
       "path": "solutions/backtracking/39_combination_sum.py",
-      "last_reviewed": "2026-06-08",
-      "next_review": "2026-06-09",
-      "review_count": 0,
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-11",
+      "review_count": 1,
       "history": [
         {
           "date": "2026-06-08",
           "event": "added"
+        },
+        {
+          "date": "2026-09-08",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-11"
         }
       ]
     },
@@ -31,13 +37,19 @@
       "difficulty": "Easy",
       "topic": "DP",
       "path": "solutions/dp/70_climbing_stairs.py",
-      "last_reviewed": "2026-06-08",
-      "next_review": "2026-06-09",
-      "review_count": 0,
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-11",
+      "review_count": 1,
       "history": [
         {
           "date": "2026-06-08",
           "event": "added"
+        },
+        {
+          "date": "2026-09-08",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-11"
         }
       ]
     },
@@ -47,13 +59,19 @@
       "difficulty": "Medium",
       "topic": "Math",
       "path": "solutions/math/50_pow_x_n.py",
-      "last_reviewed": "2026-06-08",
-      "next_review": "2026-06-09",
-      "review_count": 0,
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-11",
+      "review_count": 1,
       "history": [
         {
           "date": "2026-06-08",
           "event": "added"
+        },
+        {
+          "date": "2026-09-08",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-11"
         }
       ]
     },
@@ -63,13 +81,19 @@
       "difficulty": "Medium",
       "topic": "dp",
       "path": "solutions/dp/322_coin_change.py",
-      "last_reviewed": "2026-07-21",
-      "next_review": "2026-07-22",
-      "review_count": 0,
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-11",
+      "review_count": 1,
       "history": [
         {
           "date": "2026-07-21",
           "event": "added"
+        },
+        {
+          "date": "2026-09-08",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-11"
         }
       ]
     },
@@ -79,13 +103,19 @@
       "difficulty": "Medium",
       "topic": "dp",
       "path": "solutions/dp/300_longest_increasing_subsequence.py",
-      "last_reviewed": "2026-07-21",
-      "next_review": "2026-07-22",
-      "review_count": 0,
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-11",
+      "review_count": 1,
       "history": [
         {
           "date": "2026-07-21",
           "event": "added"
+        },
+        {
+          "date": "2026-09-08",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-11"
         }
       ]
     },
@@ -95,13 +125,19 @@
       "difficulty": "Medium",
       "topic": "dp",
       "path": "solutions/dp/120_triangle.py",
-      "last_reviewed": "2026-07-21",
-      "next_review": "2026-07-22",
-      "review_count": 0,
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-11",
+      "review_count": 1,
       "history": [
         {
           "date": "2026-07-21",
           "event": "added"
+        },
+        {
+          "date": "2026-09-08",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-11"
         }
       ]
     },
