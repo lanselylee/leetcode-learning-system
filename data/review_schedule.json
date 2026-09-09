@@ -156,6 +156,22 @@
           "event": "added"
         }
       ]
+    },
+    {
+      "id": 79,
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "path": "solutions/backtracking/79_word_search.py",
+      "last_reviewed": "2026-09-08",
+      "next_review": "2026-09-09",
+      "review_count": 0,
+      "history": [
+        {
+          "date": "2026-09-08",
+          "event": "added"
+        }
+      ]
     }
   ]
 }
