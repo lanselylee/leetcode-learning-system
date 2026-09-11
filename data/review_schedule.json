@@ -188,6 +188,28 @@
           "event": "added"
         }
       ]
+    },
+    {
+      "id": 1480,
+      "title": "Running Sum of 1d Array",
+      "difficulty": "Easy",
+      "topic": "array",
+      "path": "solutions/array/1480_running_sum_of_1d_array.py",
+      "last_reviewed": "2026-09-10",
+      "next_review": "2026-09-13",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-10",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-10",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-13"
+        }
+      ]
     }
   ]
 }
