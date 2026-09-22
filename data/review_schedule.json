@@ -210,6 +210,160 @@
           "next_review": "2026-09-13"
         }
       ]
+    },
+    {
+      "id": 4,
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "topic": "binary-search",
+      "path": "solutions/binary-search/4_median_of_two_sorted_arrays.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "topic": "binary-search",
+      "path": "solutions/binary-search/33_search_in_rotated_sorted_array.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "difficulty": "Medium",
+      "topic": "binary-search",
+      "path": "solutions/binary-search/34_find_first_and_last_position_of_element_in_sorted_array.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Search Insert Position",
+      "difficulty": "Easy",
+      "topic": "binary-search",
+      "path": "solutions/binary-search/35_search_insert_position.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Search a 2D Matrix",
+      "difficulty": "Medium",
+      "topic": "binary-search",
+      "path": "solutions/binary-search/74_search_a_2d_matrix.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "title": "Binary Tree Maximum Path Sum",
+      "difficulty": "Hard",
+      "topic": "tree",
+      "path": "solutions/tree/124_binary_tree_maximum_path_sum.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "title": "Find Minimum in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "topic": "binary-search",
+      "path": "solutions/binary-search/153_find_minimum_in_rotated_sorted_array.py",
+      "last_reviewed": "2026-09-22",
+      "next_review": "2026-09-25",
+      "review_count": 1,
+      "history": [
+        {
+          "date": "2026-09-22",
+          "event": "added"
+        },
+        {
+          "date": "2026-09-22",
+          "event": "reviewed",
+          "result": "good",
+          "next_review": "2026-09-25"
+        }
+      ]
     }
   ]
 }
